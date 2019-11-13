@@ -83,7 +83,7 @@ def install_nightly(workdir, conda_path, env_prefix, py_ver):
     #    temp_settings = "{} \"ffmpeg>4\" \"libpng>1.6.34\"".format(temp_settings)
 
     #pkgs = "{p} {t}".format(p=base_pkgs, t=temp_settings)
-    pkgs = base_pkgs
+    pkgs = "{p} libnetcdf=4.6.2".format(p=base_pkgs)
 
     py_str = construct_conda_py_str(py_ver)
         
