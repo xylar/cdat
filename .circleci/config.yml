@@ -51,7 +51,7 @@ aliases:
     name: install_from_conda_channel
     command: |
       mkdir -p $WORKDIR
-      python scripts/install_from_channel.py -w $WORKDIR -v $ENV_PREFIX -p $PYTHON_VERSION -c $CONDA_LABEL
+      python scripts/install_from_channel.py -w $WORKDIR -v $ENV_PREFIX -p $PYTHON_VERSION -c $CONDA_LABEL -l $LABEL -v $CDAT_VERSION
       ls $WORKDIR/miniconda/envs
     no_output_timeout: 30m
 
@@ -564,6 +564,7 @@ jobs:
       CONDA_DIR: /Users/distiller/project/workdir/miniconda2
       ENV_PREFIX: cdat_v82_latest_channel
       BRANCH: master
+      CDAT_VERSION: 8.2
       CONDA_LABEL: v82
       LABEL: v8.2
       CDMS_LABEL: v3.1.4
@@ -606,6 +607,7 @@ jobs:
       CONDA_DIR: /home/circleci/project/workdir/miniconda2
       ENV_PREFIX: cdat_v82_latest_channel
       BRANCH: master
+      CDAT_VERSION: 8.2
       CONDA_LABEL: v82
       LABEL: v8.2
       CDMS_LABEL: v3.1.4
@@ -649,6 +651,7 @@ jobs:
       CONDA_DIR: /Users/distiller/project/workdir/miniconda3
       ENV_PREFIX: cdat_v82_latest_channel
       BRANCH: master
+      CDAT_VERSION: 8.2
       CONDA_LABEL: v82
       LABEL: v8.2
       CDMS_LABEL: v3.1.4
@@ -691,6 +694,7 @@ jobs:
       CONDA_DIR: /Users/distiller/project/workdir/miniconda3
       ENV_PREFIX: cdat_v82_latest_channel
       BRANCH: master
+      CDAT_VERSION: 8.2
       CONDA_LABEL: v82
       LABEL: v8.2
       CDMS_LABEL: v3.1.4
@@ -733,6 +737,7 @@ jobs:
       CONDA_DIR: /home/circleci/project/workdir/miniconda3
       ENV_PREFIX: cdat_v82_latest_channel
       BRANCH: master
+      CDAT_VERSION: 8.2
       CONDA_LABEL: v82
       LABEL: v8.2
       CDMS_LABEL: v3.1.4
@@ -776,6 +781,7 @@ jobs:
       CONDA_DIR: /home/circleci/project/workdir/miniconda3
       ENV_PREFIX: cdat_v82_latest_channel
       BRANCH: master
+      CDAT_VERSION: 8.2
       CONDA_LABEL: v82
       LABEL: v8.2
       CDMS_LABEL: v3.1.4
